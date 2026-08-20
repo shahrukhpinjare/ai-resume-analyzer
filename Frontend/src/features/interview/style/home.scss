@@ -1,0 +1,569 @@
+$bg-card: #1b2132;
+$border-color: rgba(255, 255, 255, 0.08);
+$accent: #ff2f82;
+
+.home-page {
+  min-height: 100vh;
+  padding: 3rem 1rem 2rem;
+
+  background:
+    radial-gradient(
+      circle at 50% -20%,
+      rgba(38, 48, 76, 0.65),
+      transparent 45%
+    ),
+    #080b12;
+
+  color: #f5f7ff;
+}
+
+.home-container {
+  width: min(1000px, 100%);
+  margin: 0 auto;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.home-hero {
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.home-eyebrow {
+  margin: 0 0 0.8rem;
+
+  color: #ff2f82;
+
+  font-size: 0.72rem;
+  font-weight: 800;
+
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.sparkle {
+  margin-right: 0.35rem;
+}
+
+.home-hero h1 {
+  margin: 0;
+
+  font-size: clamp(2.1rem, 5vw, 3.2rem);
+  line-height: 1.08;
+
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.home-hero h1 span {
+  color: #ff2f82;
+}
+
+.home-subtitle {
+  max-width: 620px;
+  margin: 0.9rem auto 0;
+
+  color: rgba(255, 255, 255, 0.52);
+
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+/* =========================
+   MAIN PANEL
+========================= */
+
+.interview-panel {
+  display: grid;
+
+  grid-template-columns: 1.05fr 1fr;
+
+  gap: 0;
+
+  overflow: hidden;
+
+  background: rgba(18, 23, 36, 0.95);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 12px;
+
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+}
+
+.panel-card {
+  padding: 1.25rem;
+}
+
+.job-card {
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.panel-header {
+  margin-bottom: 0.85rem;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.title-icon {
+  color: #ff3182;
+  font-size: 0.9rem;
+}
+
+.panel-title {
+  color: #f7f8ff;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.required-badge {
+  padding: 0.2rem 0.45rem;
+
+  border-radius: 4px;
+
+  background: rgba(255, 47, 130, 0.16);
+  color: #ff4b91;
+
+  font-size: 0.48rem;
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+}
+
+/* =========================
+   TEXTAREA
+========================= */
+
+.job-card textarea,
+.profile-card textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+
+  border-radius: 7px;
+
+  background: #1b2132;
+
+  color: #f5f7ff;
+
+  outline: none;
+
+  resize: none;
+
+  font-family: inherit;
+}
+
+.job-card textarea {
+  height: 270px;
+
+  padding: 0.9rem;
+
+  font-size: 0.72rem;
+
+  line-height: 1.55;
+}
+
+.profile-card textarea {
+  height: 80px;
+
+  padding: 0.75rem;
+
+  font-size: 0.68rem;
+
+  line-height: 1.5;
+}
+
+.job-card textarea::placeholder,
+.profile-card textarea::placeholder {
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.job-card textarea:focus,
+.profile-card textarea:focus {
+  border-color: rgba(255, 47, 130, 0.5);
+}
+
+/* =========================
+   CHARACTER COUNT
+========================= */
+
+.character-count {
+  margin-top: 0.45rem;
+
+  text-align: right;
+
+  color: rgba(255, 255, 255, 0.35);
+
+  font-size: 0.58rem;
+}
+
+/* =========================
+   RESUME
+========================= */
+
+.resume-section {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.55rem;
+}
+
+.resume-header {
+  display: flex;
+  align-items: center;
+
+  gap: 0.5rem;
+}
+
+.resume-header label {
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 0.68rem;
+  font-weight: 600;
+}
+
+.best-results {
+  padding: 0.18rem 0.4rem;
+
+  border-radius: 4px;
+
+  background: rgba(255, 47, 130, 0.15);
+
+  color: #ff4b91;
+
+  font-size: 0.42rem;
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+}
+
+.upload-dropzone {
+  min-height: 80px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.25rem;
+
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+
+  border-radius: 7px;
+
+  background: #1b2132;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.upload-dropzone:hover {
+  border-color: rgba(255, 47, 130, 0.45);
+
+  background: #1e2437;
+}
+
+.upload-icon {
+  color: #ff3c89;
+
+  font-size: 1.25rem;
+}
+
+.upload-dropzone strong {
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 0.65rem;
+}
+
+.upload-dropzone small {
+  color: rgba(255, 255, 255, 0.35);
+
+  font-size: 0.52rem;
+}
+
+/* =========================
+   OR
+========================= */
+
+.or-divider {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 0.05rem 0;
+}
+
+.or-divider::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.or-divider span {
+  position: relative;
+
+  padding: 0 0.7rem;
+
+  background: #121724;
+
+  color: rgba(255, 255, 255, 0.32);
+
+  font-size: 0.5rem;
+}
+
+/* =========================
+   SELF DESCRIPTION
+========================= */
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.45rem;
+}
+
+.input-group label {
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 0.68rem;
+  font-weight: 600;
+}
+
+/* =========================
+   HINT
+========================= */
+
+.profile-hint {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 0.5rem;
+
+  padding: 0.55rem 0.65rem;
+
+  border-radius: 6px;
+
+  background: rgba(38, 116, 255, 0.08);
+
+  border: 1px solid rgba(38, 116, 255, 0.12);
+}
+
+.profile-hint span {
+  color: #4e9cff;
+
+  font-size: 0.55rem;
+}
+
+.profile-hint p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.48);
+
+  font-size: 0.54rem;
+
+  line-height: 1.45;
+}
+
+.profile-hint strong {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* =========================
+   BOTTOM
+========================= */
+
+.home-bottom {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  padding: 0.9rem 1rem;
+
+  background: rgba(13, 17, 27, 0.9);
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  border-top: none;
+
+  border-radius: 0 0 12px 12px;
+}
+
+.generation-info {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.38);
+
+  font-size: 0.58rem;
+}
+
+.generation-info span {
+  margin: 0 0.35rem;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.generate-button {
+  padding: 0.65rem 1rem;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background: linear-gradient(90deg, #ff2376, #ff438e);
+
+  color: white;
+
+  font-family: inherit;
+
+  font-size: 0.62rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+.generate-button:hover {
+  transform: translateY(-1px);
+
+  filter: brightness(1.08);
+}
+
+/* =========================
+   Recent Reports
+========================= */
+
+.recent-reports {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 900px;
+
+  .report-list {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+
+    .report-item {
+      background-color: $bg-card;
+      border: 1px solid $border-color;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      cursor: pointer;
+      flex-shrink: 0;
+
+      .match-score {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: $accent;
+        align-items: flex-start;
+      }
+    }
+  }
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.home-footer {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 1.5rem;
+
+  margin-top: 1.3rem;
+
+  color: rgba(255, 255, 255, 0.25);
+
+  font-size: 0.55rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 760px) {
+  .home-page {
+    padding: 2rem 0.75rem;
+  }
+
+  .interview-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .job-card {
+    border-right: none;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .job-card textarea {
+    height: 220px;
+  }
+
+  .home-bottom {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .generate-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-hero h1 {
+    font-size: 2rem;
+  }
+
+  .home-subtitle {
+    font-size: 0.78rem;
+  }
+}

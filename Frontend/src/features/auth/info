@@ -1,0 +1,16 @@
+4 layers architecture
+
+1) UI -> Display component
+    => Component
+    => Pages
+
+2) Hook -> for managing state and api layers
+    =>hooks
+
+3) State -> Data Store
+    => auth.context.jsx
+    => ai.context.jsx
+
+4) APIs -> for communication with backend
+    =>services
+        => auth.api.js

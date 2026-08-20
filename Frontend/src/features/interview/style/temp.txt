@@ -1,0 +1,177 @@
+{
+  "_id": {
+    "$oid": "6a7c18fa054f7de4ab2fd0ac"
+  },
+  "matchScore": 95,
+  "technicalQuestions": [
+    {
+      "question": "What is the difference between props and state in React?",
+      "intention": "To evaluate the candidate's understanding of core React concepts.",
+      "answer": "Props are read-only values passed from a parent component to a child component, while state is data managed internally by a component and can change over time. State changes can trigger a component re-render."
+    },
+    {
+      "question": "How do you create a responsive web application using CSS?",
+      "intention": "To assess the candidate's knowledge of responsive frontend development.",
+      "answer": "Responsive web applications can be created using flexible layouts, CSS Flexbox or Grid, relative units, media queries, and mobile-first design principles."
+    },
+    {
+      "question": "What are REST APIs and how have you used them in your React applications?",
+      "intention": "To evaluate practical experience with API integration.",
+      "answer": "REST APIs allow frontend and backend applications to communicate using HTTP methods such as GET, POST, PUT, and DELETE. In React applications, APIs can be called using fetch or libraries such as Axios, and the returned data can be stored in component state."
+    },
+    {
+      "question": "How would you handle API errors in a React application?",
+      "intention": "To assess error handling and frontend reliability skills.",
+      "answer": "API calls should use proper error handling with try-catch or promise error handlers. The application should show appropriate loading and error states and avoid breaking the user interface when an API request fails."
+    },
+    {
+      "question": "How would you implement JWT authentication in a MERN stack e-commerce application?",
+      "intention": "To evaluate the candidate's understanding of authentication in a MERN stack application.",
+      "answer": "After successful login, the server generates a JWT token. The client sends the token with protected requests, usually through an Authorization header. The backend verifies the token before allowing access to protected resources."
+    },
+    {
+      "question": "What is the difference between PUT and PATCH in a REST API?",
+      "intention": "To test understanding of commonly used HTTP methods.",
+      "answer": "PUT is generally used to replace or update an entire resource, while PATCH is used to partially update specific fields of an existing resource."
+    },
+    {
+      "question": "How do Git and GitHub help during collaborative frontend development?",
+      "intention": "To evaluate version control and collaboration skills.",
+      "answer": "Git tracks changes locally and allows developers to create branches, commit changes, and merge work. GitHub provides remote repository hosting, collaboration, pull requests, code review, and issue tracking."
+    },
+    {
+      "question": "What steps would you take to fix a UI bug reported by a user?",
+      "intention": "To assess debugging and problem-solving ability.",
+      "answer": "First, reproduce the issue and inspect the affected component using browser developer tools. Then identify whether the problem is caused by HTML, CSS, JavaScript, React state, or API data, fix the root cause, test the solution, and verify that no related functionality is affected."
+    },
+    {
+      "question": "What is the purpose of useEffect in React?",
+      "intention": "To evaluate understanding of React hooks.",
+      "answer": "useEffect is used to handle side effects in functional components, such as API calls, subscriptions, timers, and synchronizing external systems with component state."
+    },
+    {
+      "question": "How does a React frontend communicate with a Node.js and Express backend?",
+      "intention": "To assess full-stack understanding relevant to the candidate's projects.",
+      "answer": "The React frontend sends HTTP requests to backend API endpoints. Express receives and processes the request, performs required business logic or database operations, and sends a response that React uses to update the user interface."
+    }
+  ],
+  "behavioralQuestions": [
+    {
+      "question": "Tell me about a challenging bug you faced during your internship and how you solved it.",
+      "intention": "To evaluate practical problem-solving and debugging experience.",
+      "answer": "A strong answer should explain the problem, the investigation process, the technical steps taken, the solution implemented, and the final result using a clear situation-action-result structure."
+    },
+    {
+      "question": "Describe a time when you had to learn a new technology quickly.",
+      "intention": "To assess learning ability and adaptability.",
+      "answer": "A strong answer should describe the technology, why it needed to be learned, how the candidate approached learning it, how it was applied, and the outcome."
+    },
+    {
+      "question": "How do you handle feedback on your code from a senior developer or teammate?",
+      "intention": "To evaluate teamwork, communication, and willingness to improve.",
+      "answer": "I would listen carefully to the feedback, understand the reasoning behind it, ask questions if necessary, improve the code accordingly, and use the feedback to avoid similar mistakes in future work."
+    },
+    {
+      "question": "How do you prioritize tasks when working on multiple frontend issues?",
+      "intention": "To assess time management and prioritization skills.",
+      "answer": "I would prioritize tasks based on business impact, urgency, dependencies, and user impact. Critical bugs affecting users would be handled before lower-priority improvements."
+    },
+    {
+      "question": "How would you collaborate with a backend developer when integrating an API?",
+      "intention": "To evaluate communication and cross-functional collaboration.",
+      "answer": "I would first understand the API contract, request and response formats, authentication requirements, and error responses. I would communicate clearly about issues, test endpoints using tools such as Postman, and integrate the API into the frontend."
+    }
+  ],
+  "skillGaps": [
+    {
+      "skill": "Clean and maintainable code practices",
+      "severity": "medium"
+    }
+  ],
+  "preparationPlan": [
+    {
+      "day": 1,
+      "focus": "HTML and CSS Fundamentals",
+      "tasks": [
+        "Revise semantic HTML elements",
+        "Practice Flexbox and CSS Grid",
+        "Build a responsive webpage using media queries"
+      ],
+      "description": "Strengthen the frontend fundamentals required for developing responsive web applications."
+    },
+    {
+      "day": 2,
+      "focus": "JavaScript Fundamentals",
+      "tasks": [
+        "Revise variables, scope, closures, and functions",
+        "Practice promises and async/await",
+        "Solve JavaScript debugging problems"
+      ],
+      "description": "Improve JavaScript fundamentals and prepare for common frontend interview questions."
+    },
+    {
+      "day": 3,
+      "focus": "React.js",
+      "tasks": [
+        "Revise components, props, and state",
+        "Practice useState and useEffect",
+        "Build a small React application"
+      ],
+      "description": "Strengthen core React concepts and practical component development skills."
+    },
+    {
+      "day": 4,
+      "focus": "REST APIs and API Integration",
+      "tasks": [
+        "Revise HTTP methods and status codes",
+        "Integrate a public REST API in React",
+        "Practice loading and error handling"
+      ],
+      "description": "Prepare for API integration responsibilities mentioned in the job description."
+    },
+    {
+      "day": 5,
+      "focus": "Git and GitHub",
+      "tasks": [
+        "Practice Git add, commit, push, and pull",
+        "Create and merge a feature branch",
+        "Review basic GitHub collaboration workflows"
+      ],
+      "description": "Improve version control and collaborative development skills."
+    },
+    {
+      "day": 6,
+      "focus": "Projects and Debugging",
+      "tasks": [
+        "Prepare explanations for the e-commerce project",
+        "Prepare explanations for the AI Resume and Interview Analyzer project",
+        "Practice debugging UI and API-related issues"
+      ],
+      "description": "Prepare to explain practical project experience confidently during the interview."
+    },
+    {
+      "day": 7,
+      "focus": "Mock Interview",
+      "tasks": [
+        "Answer 10 technical interview questions",
+        "Answer 5 behavioral questions using the STAR method",
+        "Review all identified skill gaps"
+      ],
+      "description": "Simulate a real interview and identify final areas for improvement."
+    }
+  ],
+  "user": {
+    "$oid": "6a7c11cc054f7de4ab2fd0ab"
+  },
+  "technicalQuestionSchema": [],
+  "behavioralQuestionSchema": [],
+  "skillGapSchema": [],
+  "preparationPlanSchema": [],
+  "createdAt": {
+    "$date": "2026-08-12T06:55:54.985Z"
+  },
+  "updatedAt": {
+    "$date": "2026-08-12T06:55:54.985Z"
+  },
+  "__v": 0
+}
